@@ -1,0 +1,352 @@
+/*共通*/
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s;
+}
+a:hover {
+    opacity: .7;
+    transition: .3s;
+    text-decoration:none;
+}
+li {
+    list-style: none;
+}
+body {
+    color: #000;
+    font-family:'ヒラギノ角ゴシック';
+}
+img {
+    width: 100%;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 15;
+}
+.header-box{
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-box a{
+    color: #0D00AA;
+}
+.header-logo a p{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 80px;
+}
+.header-logo a p:hover{
+    text-shadow: 1px 1px 1px #fff;
+}
+.header-list ul{
+    display: flex;
+    line-height: 80px;
+}
+.header-list ul li a{
+    margin-right: 40px;
+}
+.header-btn a{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    background-color:#0D00AA;
+    color: #fff;
+    padding: 20px 60px;
+    line-height: 40px;
+}
+.header-btn a:hover{
+    color:#0D00AA;
+    background-color: #fff;
+}
+
+/*maiin*/
+.main-box{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #0D00AA;
+    padding: 40px;
+}
+.main-logo{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #0D00AA;
+    margin: 80px;
+}
+/*first-view*/
+.first-view img{
+    width:100%;
+    height: 100vh;
+    opacity: 0.6;
+    position: relative;
+    margin-bottom: 50px;
+}
+.first-view p{
+    color:#0D00AA;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    z-index: 10;
+    font-size: 150px;
+    font-weight: bold;
+    opacity: 0.8;
+    text-align: right;
+    line-height: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 2px 2px 5px #fff;
+}
+.first-view h1{
+    background-color: #0D00AA;
+    text-align: center;
+    padding: 30px;
+    font-size: 40px;
+    color: #fff;
+    width: 50%;
+    margin: 0 auto;
+    letter-spacing: 5px;
+}
+.first-view h1 span{
+    padding-bottom: 6px;
+    border-bottom: 3px solid #fff;
+}
+.first-view h1:last-of-type{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/*about*/
+.about-text p{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding:0px 30px 30px 30px;
+}
+.about-item{
+    color: #fff;
+    margin: 0 auto;
+}
+table th{
+    padding: 20px;
+    border: 2px solid #fff;
+}
+table td{
+    padding: 20px;
+    border: 2px solid #fff;
+}
+.about-item-last {
+    font-weight: bold;
+    color: #F7F700;
+}
+
+/*menu*/
+.menu-text p{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding:0px 30px 30px 30px ;
+}
+.menu-item{
+    color: #fff;
+    margin: 0 auto;
+}
+
+/*reserve*/
+input{
+    width: 20%;
+}
+textarea{
+    width: 40%;
+}
+.reserve-box{
+    text-align: center;
+}
+.reserve-name{
+    color: #fff;
+    padding: 20px;
+}
+.reserve-number{
+    color: #fff;
+    padding: 20px;
+}
+.reserve-mail{
+    color: #fff;
+    padding: 20px;
+}
+.reserve-contact{
+    color: #fff;
+    padding: 20px;
+}
+.reserve-text p{
+    padding-bottom: 10px;
+}
+.reserve-btn{
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+/*footer*/
+.footer-logo{
+    text-align: center;
+    padding: 20px;
+    background-color: #0D00AA;
+    margin-top: 100px;
+    color: #fff;
+}
+
+/*responsive*/
+@media(max-width:520px){
+
+    /*header*/
+    header{
+        height: 90px;
+    }
+    .header-box{
+        padding:0;
+        display: initial;
+        text-align: center;
+    }
+    .header-logo a p{
+        font-size: 10px;
+        font-weight:normal;
+        line-height:0;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    .header-list ul{
+        line-height:0;
+        padding-left: 193px;
+        padding-top: 10px;
+    }
+    .header-list ul li a{
+        font-size: 10px;
+        margin-right: 40px;
+    }
+    .header-btn a{
+        font-weight:normal;
+        font-size: 10px;
+        margin: 20px;
+        padding: 10px;
+        line-height:0;
+    }
+
+    /*main*/
+    .main-box{
+        width: 100%;
+        padding: 10px;
+    }
+    .main-logo{
+        font-size: 30px;
+        margin: 40px;
+    }
+    /*first-view*/
+    .first-view img{
+        height: 50vh;
+        background-position:left;
+        margin-bottom: 25px;
+    }
+    .first-view p{
+        display: none;
+    }
+    .first-view h1{
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        width: 80%;
+        margin: 0 auto;
+        letter-spacing:0;
+    }
+    .first-view h1 span{
+        padding-bottom: 6px;
+        border-bottom: 2px solid #fff;
+    }
+    .first-view h1:last-of-type{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /*about*/
+    .about-text p{
+        font-size: 10px;
+        padding: 10px;
+    }
+    table th{
+        padding: 2px;
+        font-size: 10px;
+        transform: scale(0.6);
+    }
+    table td{
+        padding: 2px;
+        font-size: 10px;
+        transform: scale(0.6);
+    }
+    /*menu*/
+    .menu-text p{
+        font-size: 10px;
+        padding:10px;
+    }
+    /*reserve*/
+    input{
+        width: 40%;
+    }
+    textarea{
+        width: 50%;
+    }
+    .reserve-name{
+        padding: 10px;
+    }
+    .reserve-number{
+        padding: 10px;
+    }
+    .reserve-mail{
+        padding: 10px;
+    }
+    .reserve-contact{
+        padding: 10px;
+    }
+    .reserve-text p{
+        padding-bottom: 10px;
+    }
+    .reserve-btn{
+        margin-top: 10px;
+    }
+    textarea{
+        height: 50px;
+    }
+    /*footer*/
+    .footer-logo{
+        padding: 10px;
+        margin-top: 50px;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
